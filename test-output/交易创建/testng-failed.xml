@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [交易创建]">
+  <test name="交易otp-正常获取Otp(failed)">
+    <groups>
+      <run>
+        <include name="CaseTransactionOtp001"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+      <class name="com.suite.CaseLogin">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.suite.CaseLogin -->
+      <class name="com.suite.CaseTransactionCreate">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionCreate -->
+      <class name="com.suite.CaseTransactionOtp">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="CaseTransactionOtp001" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionOtp -->
+    </classes>
+  </test> <!-- 交易otp-正常获取Otp(failed) -->
+</suite> <!-- Failed suite [交易创建] -->

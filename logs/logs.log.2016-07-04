@@ -1,0 +1,480 @@
+2016-07-04 18:29:21,482-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:29:21,484-[Auto] INFO [main] com.BaseCase.beforeClass(60) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:29:21,488-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 18:29:21,613-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:29:21,618-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:29:21,655-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:29:21,655-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:29:21,658-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:29:21,659-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:29:21,659-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:29:22,612-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 18:29:22,614-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(47) - Response Header :{x-flags=company, x-token=2AOlBJQ7c8wBEOBkuH3tYdIqFoYq2oPpJCAR917siombmV2DwEfP7g9Bo6CyS9EKbJRQm, Content-Length=216, Content-Type=application/json}
+2016-07-04 18:29:22,615-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(48) - Response Content :{"access_token":"2AOlBJQ7c8wBEOBkuH3tYdIqFoYq2oPpJCAR917siombmV2DwEfP7g9Bo6CyS9EKbJRQm","refresh_token":"2XDaG5QQpnWnbMhsviRCEi5n6eAHWOaWD5A2sfPForTv5q9sXe1MhrB5EkjsiwtT8isIC","expires_in":"21600","new_device":"old"}
+2016-07-04 18:29:22,616-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(53) - 天天c
+2016-07-04 18:29:22,621-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:29:22,622-[Auto] INFO [main] com.BaseCase.afterClass(66) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:29:22,668-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:29:22,669-[Auto] INFO [main] com.BaseCase.beforeClass(60) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:29:22,670-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 18:29:22,672-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:29:22,673-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:29:22,677-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:29:22,677-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:29:22,678-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:29:22,680-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:29:22,680-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:29:22,691-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 18:29:22,691-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(47) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 18:29:22,692-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(48) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 18:29:22,692-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(53) - 天天t
+2016-07-04 18:29:22,693-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:29:22,693-[Auto] INFO [main] com.BaseCase.afterClass(66) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:54:29,969-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:54:29,971-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:54:29,974-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 18:54:30,103-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:54:30,108-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:54:30,135-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:54:30,135-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:54:30,138-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:54:30,139-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:54:30,139-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:54:30,714-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 18:54:30,716-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{x-flags=company, x-token=2AJ1DOWhSGiZsk09aiTrOGiB86I1XbJysmOrsiUm3WAxpLsQwAYzipH5eATZZHDvhjNaS, Content-Length=216, Content-Type=application/json}
+2016-07-04 18:54:30,717-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"access_token":"2AJ1DOWhSGiZsk09aiTrOGiB86I1XbJysmOrsiUm3WAxpLsQwAYzipH5eATZZHDvhjNaS","refresh_token":"2ALIlC7IsAiZXh1AtcbCr9Rwq5sFuVv61VCwFeyAwtVcIsQZLkUAVAGqsPV7XgxbUF33H","expires_in":"21600","new_device":"old"}
+2016-07-04 18:54:30,802-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(59) - 天天c
+2016-07-04 18:54:30,803-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:54:30,804-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 18:54:30,805-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:54:30,806-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:54:30,809-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:54:30,809-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:54:30,810-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:54:30,811-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:54:30,811-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:54:30,821-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 18:54:30,821-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 18:54:30,821-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 18:54:30,847-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(59) - 天天t
+2016-07-04 18:54:30,849-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:54:30,849-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:55:54,524-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:55:54,526-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:55:54,529-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 18:55:54,652-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:55:54,658-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:55:54,684-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:55:54,684-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:55:54,687-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:55:54,688-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:55:54,688-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:55:55,229-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 18:55:55,229-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{x-flags=company, x-token=2ANO36IDCIsLQi1Z4lD58uSBdJBhHXPlNt03PoMBiHbJfzGgV3VEYWRg36HtBG90F9XaH, Content-Length=216, Content-Type=application/json}
+2016-07-04 18:55:55,230-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"access_token":"2ANO36IDCIsLQi1Z4lD58uSBdJBhHXPlNt03PoMBiHbJfzGgV3VEYWRg36HtBG90F9XaH","refresh_token":"2L3UQVXeCQ7dXdAoYUUTYIrW5473obUFwD7Qv7I69brWrGAzl3mAmTnggkX5AdxM9cWAC","expires_in":"21600","new_device":"old"}
+2016-07-04 18:55:55,283-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token取到是2ANO36IDCIsLQi1Z4lD58uSBdJBhHXPlNt03PoMBiHbJfzGgV3VEYWRg36HtBG90F9XaH
+2016-07-04 18:55:55,283-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(60) - 天天c
+2016-07-04 18:55:55,287-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:55:55,288-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:55:55,306-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:55:55,307-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:55:55,308-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 18:55:55,310-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:55:55,311-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:55:55,314-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:55:55,315-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:55:55,315-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:55:55,316-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:55:55,316-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:55:55,328-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 18:55:55,328-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 18:55:55,329-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 18:55:55,337-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token取到是null
+2016-07-04 18:55:55,337-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(60) - 天天t
+2016-07-04 18:55:55,338-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:55:55,339-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:56:41,829-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:56:41,831-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:56:41,836-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 18:56:41,958-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:56:41,963-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:56:41,989-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:56:41,990-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:56:41,992-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:56:41,994-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:56:41,994-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:56:42,631-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 18:56:42,633-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{x-flags=company, x-token=2UWDCKm98k5K3eOIiiMTLcqHGJZ1aXIn2FAJz8wm4latvSPyUMkYYi45YQWVj8NWQbz8C, Content-Length=216, Content-Type=application/json}
+2016-07-04 18:56:42,634-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"access_token":"2UWDCKm98k5K3eOIiiMTLcqHGJZ1aXIn2FAJz8wm4latvSPyUMkYYi45YQWVj8NWQbz8C","refresh_token":"2F8Nk4LdjfyBO58YPe707cyDB8nf9nFZ57kM9D1Oo6tmaYdKe8ZdrQWH4BVfzeztI534C","expires_in":"21600","new_device":"old"}
+2016-07-04 18:56:42,703-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token取到是2UWDCKm98k5K3eOIiiMTLcqHGJZ1aXIn2FAJz8wm4latvSPyUMkYYi45YQWVj8NWQbz8C
+2016-07-04 18:56:42,705-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:56:42,706-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:56:42,722-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 18:56:42,723-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 18:56:42,723-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 18:56:42,724-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 18:56:42,725-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 18:56:42,727-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 18:56:42,727-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 18:56:42,728-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 18:56:42,728-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 18:56:42,729-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 18:56:42,740-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 18:56:42,741-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 18:56:42,741-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 18:56:42,749-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token取到是null
+2016-07-04 18:56:42,751-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 18:56:42,751-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:00:15,172-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:00:15,174-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:00:15,178-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:00:15,305-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:00:15,310-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:00:15,338-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:00:15,338-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:00:15,341-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:00:15,342-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:00:15,342-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:00:15,917-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:00:15,919-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{x-flags=company, x-token=2dd3vlCB2fhoYVgmBm41oDUCwG3IZFHkNXIuvYiiIYhOkeSi5wGCOAWghQ0MjeGkx1AEC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:00:15,920-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"access_token":"2dd3vlCB2fhoYVgmBm41oDUCwG3IZFHkNXIuvYiiIYhOkeSi5wGCOAWghQ0MjeGkx1AEC","refresh_token":"2ZtA18dgUlOC9w8DvmpBehQiJSXFZjHXLVz1fPDii9YtR3MXdnC5O26dL2CEBq2nshnYC","expires_in":"21600","new_device":"old"}
+2016-07-04 19:00:15,997-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token-->>2dd3vlCB2fhoYVgmBm41oDUCwG3IZFHkNXIuvYiiIYhOkeSi5wGCOAWghQ0MjeGkx1AEC
+2016-07-04 19:00:15,999-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:00:16,000-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:00:16,018-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:00:16,018-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:00:16,019-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:00:16,020-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:00:16,021-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:00:16,023-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:00:16,024-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:00:16,024-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:00:16,025-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:00:16,025-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:00:16,035-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:00:16,036-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:00:16,036-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:00:16,045-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token-->>null
+2016-07-04 19:00:16,046-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:00:16,047-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:32,714-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:09:32,717-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:32,720-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:09:32,843-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:32,847-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:09:32,873-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:09:32,873-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:09:32,876-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:09:32,877-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:09:32,877-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:09:33,664-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:09:33,665-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2JLVdAXb7G2yMUe11vleXaDgZvG7fMEaK4RbAENkElktIYcHMlalxrDkMvafqvgovX5wC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:09:33,665-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2JLVdAXb7G2yMUe11vleXaDgZvG7fMEaK4RbAENkElktIYcHMlalxrDkMvafqvgovX5wC","refresh_token":"2AJsAZEb7M9FArTI2rlIGhhvUtUHuREXLLAN1jxOTpKmjmZWT7B1cBPbF7BOtM12YBjEu","expires_in":"21600","new_device":"old"}
+2016-07-04 19:09:33,712-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(58) - token-->>2JLVdAXb7G2yMUe11vleXaDgZvG7fMEaK4RbAENkElktIYcHMlalxrDkMvafqvgovX5wC
+2016-07-04 19:09:33,714-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:33,714-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:33,730-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:09:33,731-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:33,731-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:09:33,732-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:33,733-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:09:33,735-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:09:33,736-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:09:33,736-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:09:33,737-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:09:33,737-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:09:33,748-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:09:33,748-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:09:33,748-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:09:33,756-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(58) - token-->>null
+2016-07-04 19:09:33,758-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:33,758-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:53,512-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:09:53,514-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:53,519-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:09:53,646-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:53,650-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:09:53,675-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:09:53,676-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:09:53,679-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:09:53,680-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:09:53,680-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:09:54,337-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:09:54,337-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2aB0Ep7uqW8zyueD1V42Vji3Eh0WVPMFTrUpwk0BaHWv9ek9aGlECTPP42vDQFAYyVuAC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:09:54,337-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2aB0Ep7uqW8zyueD1V42Vji3Eh0WVPMFTrUpwk0BaHWv9ek9aGlECTPP42vDQFAYyVuAC","refresh_token":"2ALwDhbrQeBIQDabglPZSVd4Ghz5qkGAjOmRlu67AwfSQXTd2U2EIa1A5vQmsmJstoSbo","expires_in":"21600","new_device":"old"}
+2016-07-04 19:09:54,392-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(58) - token-->>2aB0Ep7uqW8zyueD1V42Vji3Eh0WVPMFTrUpwk0BaHWv9ek9aGlECTPP42vDQFAYyVuAC
+2016-07-04 19:09:54,396-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:54,397-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:54,414-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:09:54,414-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:09:54,414-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:09:54,416-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:54,417-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:09:54,420-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:09:54,420-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:09:54,420-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:09:54,421-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:09:54,422-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:09:54,432-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:09:54,433-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:09:54,433-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:09:54,442-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(58) - token-->>null
+2016-07-04 19:09:54,443-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:09:54,444-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:10:31,394-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:10:31,396-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:10:31,400-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:10:31,531-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:10:31,536-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:10:31,563-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:10:31,563-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:10:31,566-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:10:31,567-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:10:31,567-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:10:32,153-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:10:32,155-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2DIaMXABZe3wkfCLgpZisfPawODusBaeck5xF6ofaHYLRRpXGDLkj8rrUl4HB9WXLlNMC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:10:32,156-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2DIaMXABZe3wkfCLgpZisfPawODusBaeck5xF6ofaHYLRRpXGDLkj8rrUl4HB9WXLlNMC","refresh_token":"2a36OpD0UJOjISKM8pxsKoQoWcpfJnVtFLXTfYQAvGBpy64e5BT2J744KvK10Sefo0rIC","expires_in":"21600","new_device":"old"}
+2016-07-04 19:10:32,231-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(58) - token-->>2DIaMXABZe3wkfCLgpZisfPawODusBaeck5xF6ofaHYLRRpXGDLkj8rrUl4HB9WXLlNMC
+2016-07-04 19:10:32,232-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:10:32,233-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:10:32,251-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:10:32,251-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:10:32,252-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:10:32,253-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:10:32,255-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:10:32,257-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:10:32,258-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:10:32,258-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:10:32,259-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:10:32,259-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:10:32,272-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:10:32,272-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:10:32,272-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:10:32,281-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(58) - token-->>null
+2016-07-04 19:10:32,282-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:10:32,283-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:15:57,097-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:15:57,099-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:15:57,105-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:15:57,255-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:15:57,261-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:15:57,265-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:15:57,266-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:15:57,288-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:15:57,289-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:15:57,289-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:15:57,291-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:15:57,292-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:15:57,293-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:15:57,294-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:17:16,509-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:17:16,511-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:17:16,515-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:17:16,640-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:17:16,644-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:17:16,671-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:17:16,671-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:17:16,674-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:17:16,675-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:17:16,675-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:17:17,279-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:17:17,280-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{x-flags=company, x-token=2MFq0GJSrWSAxWmgepJHGQ7w4frKLLI4vrA53WsAqQtjg0laJXcYPfkBMwuGgBwIEg1IC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:17:17,281-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"access_token":"2MFq0GJSrWSAxWmgepJHGQ7w4frKLLI4vrA53WsAqQtjg0laJXcYPfkBMwuGgBwIEg1IC","refresh_token":"2AK3WD7lGl7Achu8hkzhw2KbIExb9QWAA7qifhP4gocdziwpLNWbADiyknTsVO4wE00EC","expires_in":"21600","new_device":"old"}
+2016-07-04 19:17:17,361-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(56) - token-->>2MFq0GJSrWSAxWmgepJHGQ7w4frKLLI4vrA53WsAqQtjg0laJXcYPfkBMwuGgBwIEg1IC
+2016-07-04 19:17:17,363-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:17:17,363-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:17:17,380-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:17:17,381-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:17:17,381-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:17:17,382-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:17:17,383-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:17:17,386-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:17:17,386-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:17:17,386-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:17:17,387-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:17:17,387-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:17:17,400-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:17:17,400-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(50) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:17:17,400-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:17:17,403-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:17:17,404-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:23:06,251-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:23:06,253-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:23:06,257-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:23:06,385-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:23:06,390-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:23:06,421-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:23:06,422-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:23:06,424-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:23:06,425-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:23:06,426-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:23:07,155-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:23:07,157-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2SzvfkAuJ22uzcCkYGRhHAmPJb8i5P0sFdBhMZDmD0fhTISTILKAdMpAGKpCtJmXF9YkC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:23:07,158-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2SzvfkAuJ22uzcCkYGRhHAmPJb8i5P0sFdBhMZDmD0fhTISTILKAdMpAGKpCtJmXF9YkC","refresh_token":"2AJNnmTcHaw8tWmFzKVlBvykx4sVN95lFO3EperoOZwg6YbGRBGoLbcilDwrAgOeJUnQZ","expires_in":"21600","new_device":"old"}
+2016-07-04 19:23:07,172-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:23:07,173-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:23:07,207-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:23:07,207-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:23:07,208-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:23:07,209-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:23:07,210-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:23:07,212-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:23:07,213-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:23:07,213-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:23:07,213-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:23:07,214-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:23:07,225-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:23:07,226-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:23:07,226-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:23:07,228-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:23:07,229-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:12,195-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:25:12,197-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:12,201-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:25:12,329-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:12,334-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:25:12,360-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:25:12,360-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:25:12,363-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:25:12,365-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:25:12,365-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:25:12,985-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:25:12,987-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2ANBQ8rz0B8e8fmRjAsiYeEFkmnfYOWP1AenS7p8HWn4AO3zU7RVfCya15DguvdWofwsS, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:25:12,988-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2ANBQ8rz0B8e8fmRjAsiYeEFkmnfYOWP1AenS7p8HWn4AO3zU7RVfCya15DguvdWofwsS","refresh_token":"2AMzMtO6N2BOip1pG4RCWyjuU5Z3rw6LhT7nfXnrFBiOixjdS5JzzVIYcYnmkr16u4DFh","expires_in":"21600","new_device":"old"}
+2016-07-04 19:25:13,070-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(57) - token-->>2ANBQ8rz0B8e8fmRjAsiYeEFkmnfYOWP1AenS7p8HWn4AO3zU7RVfCya15DguvdWofwsS
+2016-07-04 19:25:13,071-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:13,072-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:13,088-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:25:13,089-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:13,089-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:25:13,090-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:13,091-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:25:13,094-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:25:13,094-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:25:13,094-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:25:13,095-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:25:13,095-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:25:13,107-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:25:13,107-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:25:13,107-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:25:13,115-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(57) - token-->>null
+2016-07-04 19:25:13,118-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:13,118-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:45,488-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:25:45,490-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:45,495-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:25:45,622-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:45,627-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:201, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:25:45,654-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:25:45,654-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:25:45,657-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:25:45,658-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:25:45,658-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:25:46,180-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:25:46,181-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2CTaHGv2iDiBil1cuwaubVAbN5AtbpbeAAtranFpkZBWGsBkBgBybv974DdWqQ04kELEC, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:25:46,182-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2CTaHGv2iDiBil1cuwaubVAbN5AtbpbeAAtranFpkZBWGsBkBgBybv974DdWqQ04kELEC","refresh_token":"2AMG0CPHSjVXFimA9Gq5DJgHPAjIgqOqZAmo7yBHqT4O6dZCRqeCj2GjBic9YxqJt8kFJ","expires_in":"21600","new_device":"old"}
+2016-07-04 19:25:46,195-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:46,197-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:46,231-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:25:46,232-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:25:46,233-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:25:46,234-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:46,235-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:25:46,237-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:25:46,238-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:25:46,238-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:25:46,239-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:25:46,239-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:25:46,248-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:25:46,249-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:25:46,249-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:25:46,304-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(57) - token-->>null
+2016-07-04 19:25:46,306-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:25:46,306-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:29:35,733-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:29:35,735-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:29:35,739-[Auto] INFO [main] com.data.LoginData.loginData001(19) - 	 登录-正常测试用例
+2016-07-04 19:29:35,862-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:29:35,868-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin001(27) - 	[ DfbLogin001] DATA NAME:LoginApi, Exp HttpStatus:200, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:29:35,895-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:29:35,895-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:29:35,898-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:29:35,899-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"120c83f7602791d0bef","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:29:35,899-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:29:36,652-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :200 OK  
+2016-07-04 19:29:36,654-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{x-flags=company, x-token=2AKuBoeIVTTxSJTxvcd4ieeWSBEyhFlvPvcnBdjWW8DsAjO91g8BiM9q5IbdLHXphFlgP, Content-Length=216, Content-Type=application/json}
+2016-07-04 19:29:36,655-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"access_token":"2AKuBoeIVTTxSJTxvcd4ieeWSBEyhFlvPvcnBdjWW8DsAjO91g8BiM9q5IbdLHXphFlgP","refresh_token":"2TOiOUQlQt8T931ww2C8RPaAf1eLmL72PC2nIi5AVvhx3npoN6o1iZluAXSm8FQ8efl0C","expires_in":"21600","new_device":"old"}
+2016-07-04 19:29:36,728-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(57) - token-->>2AKuBoeIVTTxSJTxvcd4ieeWSBEyhFlvPvcnBdjWW8DsAjO91g8BiM9q5IbdLHXphFlgP
+2016-07-04 19:29:36,731-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:29:36,731-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:29:36,749-[Auto] INFO [main] com.util.DBImpl.getCon(249) - dbHost:10.10.1.130,dbPort:3306,os:Linux_64,type:MYSQL,dbUser:platform,dbPwd:platform,dbName:che001,dbInstance:
+2016-07-04 19:29:36,749-[Auto] INFO [main] com.BaseCase.beforeClass(59) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+2016-07-04 19:29:36,750-[Auto] INFO [main] com.data.LoginData.loginData002(30) - 	 登录-其中deviceId为空的测试用例
+2016-07-04 19:29:36,751-[Auto] INFO [main] com.BaseCase.beforeMethod(41) - ■■■■■■■■■■■■*Test Method*■■■■■■■■■■■■
+2016-07-04 19:29:36,752-[Auto] INFO [main] com.suite.CaseLogin.DfbLogin002(39) - 	[ DfbLogin002 exception] DATA NAME:LoginApi, Exp HttpStatus:400, UserName:13510872038, UserPwd:che001, 
+	Param:{"platform":"ANDROID","deviceId":"","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"}
+
+2016-07-04 19:29:36,754-[Auto] INFO [main] com.http.Request.RequestClient.execute(130) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1
+2016-07-04 19:29:36,755-[Auto] INFO [main] com.http.Request.RequestClient.execute(132) - HTTP REQUEST HEADERS << {Content-Type=application/json, Authorization=Basic MTM1MTA4NzIwMzg6Y2hlMDAx}
+2016-07-04 19:29:36,755-[Auto] INFO [main] com.http.Request.RequestClient.execute(136) - HTTP REQUEST COOKIES << {}
+2016-07-04 19:29:36,756-[Auto] INFO [main] com.http.Request.RequestClient.execute(141) - HTTP REQUEST CONTENT << {"mobileId":"866696027120060","deviceId":"","deviceName":"HUAWEIHUAWEI GRA-UL00","platform":"ANDROID"}
+2016-07-04 19:29:36,756-[Auto] INFO [main] com.http.Request.RequestClient.execute(143) - HTTP REQUEST Content-Type << application/json
+2016-07-04 19:29:36,776-[Auto] INFO [main] com.http.Request.RequestClient.execute(200) - HTTP REQUEST POST http://api-mobile.local-kaiyuan.com/mobile/v3_0_4/app/newlogin?appVer=4.4.1 ,RESPONSE status line :400 Bad Request  
+2016-07-04 19:29:36,776-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(51) - Response Header :{Content-Length=76, Content-Type=application/json; charset=utf-8}
+2016-07-04 19:29:36,776-[Auto] INFO [main] com.acinterface.IDfbLogin.afterRequest(52) - Response Content :{"status":400,"errors":[{"code":"000X001X000","message":"必传参数空"}]}
+2016-07-04 19:29:36,787-[Auto] INFO [main] com.BaseCase.afterMethod(46) - ■■■■■■■■■■■■*End Test Method*■■■■■■■■■■■■
+2016-07-04 19:29:36,788-[Auto] INFO [main] com.BaseCase.afterClass(65) - ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

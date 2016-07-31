@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="获取OTP" parallel="false">
+    
+<!-- get token -->
+	<test name="登录-正常登录" preserve-order="true">
+		<groups>
+			<run>				
+				<include name="CaseLogin001"/>				
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseLogin" />			
+		</classes>
+	</test>
+	<!-- get  TransactionId-->
+	<test name="交易初始-正常初始化" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionInit001"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionInit" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-正常创建" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate001"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易otp-正常获取Otp" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionOtp001"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionOtp" />			
+		</classes>
+	</test>
+	
+</suite>

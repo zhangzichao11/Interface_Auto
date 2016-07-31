@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-交易确认">
+              <span class="suite-name border-failed">交易确认</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-交易确认">
+                    <span>E:\workspace2\Interface_Auto\testngxml\testng-05-CaseTransactionApprove.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-交易确认">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-交易确认">
+                    <span>5 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-交易确认">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-交易确认">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-交易确认">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-交易确认">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 4 failed,  1 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-交易确认" class="hide-methods failed suite-交易确认"> (hide)</a> <!-- hide-methods failed suite-交易确认 -->
+                      <a href="#" panel-name="suite-交易确认" class="show-methods failed suite-交易确认"> (show)</a> <!-- show-methods failed suite-交易确认 -->
+                    </span>
+                    <div class="method-list-content failed suite-交易确认">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-交易确认" title="com.suite.CaseLogin" hash-for-method="CaseLogin001(LoginData001, 13710872022, che001, 200, {&quot;platform&quot;:&quot;ANDROID&quot;,&quot;deviceId&quot;:&quot;120c83f7602791d0bef&quot;,&quot;mobi...)">CaseLogin001(LoginData001, 13710872022, che001, 200, {"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-交易确认" title="com.suite.CaseTransactionCreate" hash-for-method="CaseTransactionCreate001(TransatcionCreateData001, 201, {&quot;transactionId&quot;:null,&quot;royalty_paramet&quot;:&quot;AF_2&amp;&amp;CF_0&quot;,&quot;totalAmount&quot;:&quot;2...)">CaseTransactionCreate001(TransatcionCreateData001, 201, {"transactionId":null,"royalty_paramet":"AF_2&&CF_0","totalAmount":"2...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-交易确认" title="com.suite.CaseTransactionInit" hash-for-method="CaseTransactionInit001(TransactionInitData001, 200, {&quot;sourcePhone&quot;:&quot;13710872022&quot;,&quot;targetPhone&quot;:&quot;16800000017&quot;,&quot;amount&quot;:&quot;2&quot;,&quot;...)">CaseTransactionInit001(TransactionInitData001, 200, {"sourcePhone":"13710872022","targetPhone":"16800000017","amount":"2","...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-交易确认" title="com.suite.CaseTransactionOtp" hash-for-method="CaseTransactionOtp001(TransactionOtpData001, 201, {&quot;transaction&quot;:null})">CaseTransactionOtp001(TransactionOtpData001, 201, {"transaction":null})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-交易确认 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-交易确认" class="hide-methods skipped suite-交易确认"> (hide)</a> <!-- hide-methods skipped suite-交易确认 -->
+                      <a href="#" panel-name="suite-交易确认" class="show-methods skipped suite-交易确认"> (show)</a> <!-- show-methods skipped suite-交易确认 -->
+                    </span>
+                    <div class="method-list-content skipped suite-交易确认">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-交易确认" title="com.suite.CaseTransactionApprove" hash-for-method="CaseTransactionApprove001">CaseTransactionApprove001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-交易确认 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-交易确认" class="panel 交易确认">
+          <div class="suite-交易确认-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.suite.CaseTransactionCreate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CaseTransactionCreate001(TransatcionCreateData001, 201, {&quot;transactionId&quot;:null,&quot;royalty_paramet&quot;:&quot;AF_2&amp;&amp;CF_0&quot;,&quot;totalAmount&quot;:&quot;2...)">
+                  </a> <!-- CaseTransactionCreate001(TransatcionCreateData001, 201, {"transactionId":null,"royalty_paramet":"AF_2&&CF_0","totalAmount":"2...) -->
+                  <span class="method-name">CaseTransactionCreate001</span>
+                  <span class="parameters">(TransatcionCreateData001, 201, {"transactionId":null,"royalty_paramet":"AF_2&&CF_0","totalAmount":"2"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [201] but found [401]
+	at com.acinterface.IDfbTransactionCreate.afterRequest(IDfbTransactionCreate.java:44)
+	at com.http.AWebApiService.run(AWebApiService.java:48)
+	at com.suite.CaseTransactionCreate.CaseTransactionCreate001(CaseTransactionCreate.java:25)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-交易确认-class-failed -->
+          <div class="suite-交易确认-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.suite.CaseTransactionInit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CaseTransactionInit001(TransactionInitData001, 200, {&quot;sourcePhone&quot;:&quot;13710872022&quot;,&quot;targetPhone&quot;:&quot;16800000017&quot;,&quot;amount&quot;:&quot;2&quot;,&quot;...)">
+                  </a> <!-- CaseTransactionInit001(TransactionInitData001, 200, {"sourcePhone":"13710872022","targetPhone":"16800000017","amount":"2","...) -->
+                  <span class="method-name">CaseTransactionInit001</span>
+                  <span class="parameters">(TransactionInitData001, 200, {"sourcePhone":"13710872022","targetPhone":"16800000017","amount":"2","direction":"out","channel":"PC"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at com.acinterface.IDfbTransactionInit.afterRequest(IDfbTransactionInit.java:54)
+	at com.http.AWebApiService.run(AWebApiService.java:48)
+	at com.suite.CaseTransactionInit.CaseTransactionInit001(CaseTransactionInit.java:36)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-交易确认-class-failed -->
+          <div class="suite-交易确认-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.suite.CaseTransactionOtp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CaseTransactionOtp001(TransactionOtpData001, 201, {&quot;transaction&quot;:null})">
+                  </a> <!-- CaseTransactionOtp001(TransactionOtpData001, 201, {"transaction":null}) -->
+                  <span class="method-name">CaseTransactionOtp001</span>
+                  <span class="parameters">(TransactionOtpData001, 201, {"transaction":null})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [201] but found [401]
+	at com.acinterface.IDfbTransactionOtp.afterRequest(IDfbTransactionOtp.java:45)
+	at com.http.AWebApiService.run(AWebApiService.java:48)
+	at com.suite.CaseTransactionOtp.CaseTransactionOtp001(CaseTransactionOtp.java:25)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-交易确认-class-failed -->
+          <div class="suite-交易确认-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.suite.CaseLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CaseLogin001(LoginData001, 13710872022, che001, 200, {&quot;platform&quot;:&quot;ANDROID&quot;,&quot;deviceId&quot;:&quot;120c83f7602791d0bef&quot;,&quot;mobi...)">
+                  </a> <!-- CaseLogin001(LoginData001, 13710872022, che001, 200, {"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobi...) -->
+                  <span class="method-name">CaseLogin001</span>
+                  <span class="parameters">(LoginData001, 13710872022, che001, 200, {"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobileId":"866696027120060","deviceName":"HUAWEIHUAWEI GRA-UL00"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
+	at com.acinterface.IDfbLogin.afterRequest(IDfbLogin.java:55)
+	at com.http.AWebApiService.run(AWebApiService.java:48)
+	at com.suite.CaseLogin.CaseLogin001(CaseLogin.java:33)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-交易确认-class-failed -->
+          <div class="suite-交易确认-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.suite.CaseTransactionApprove</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CaseTransactionApprove001">
+                  </a> <!-- CaseTransactionApprove001 -->
+                  <span class="method-name">CaseTransactionApprove001</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.LinkedList.checkElementIndex(LinkedList.java:555)
+	at java.util.LinkedList.get(LinkedList.java:476)
+	at com.util.ResultMap.getKey(ResultMap.java:24)
+	at com.data.TransactionApproveData.TransactionApproveData001(TransactionApproveData.java:30)
+	... 20 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-交易确认-class-skipped -->
+        </div> <!-- panel 交易确认 -->
+        <div panel-name="test-xml-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\workspace2\Interface_Auto\testngxml\testng-05-CaseTransactionApprove.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;交易确认&quot;&gt;
+  &lt;test name=&quot;登录-正常登录&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;CaseLogin001&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.suite.CaseLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 登录-正常登录 --&gt;
+  &lt;test name=&quot;交易初始-正常初始化&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;CaseTransactionInit001&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.suite.CaseTransactionInit&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 交易初始-正常初始化 --&gt;
+  &lt;test name=&quot;交易创建-正常创建&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;CaseTransactionCreate001&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.suite.CaseTransactionCreate&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 交易创建-正常创建 --&gt;
+  &lt;test name=&quot;交易otp-正常获取Otp&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;CaseTransactionOtp001&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.suite.CaseTransactionOtp&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 交易otp-正常获取Otp --&gt;
+  &lt;test name=&quot;交易确认-正常交易确认&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;CaseTransactionApprove001&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.suite.CaseTransactionApprove&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 交易确认-正常交易确认 --&gt;
+&lt;/suite&gt; &lt;!-- 交易确认 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 交易确认</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">登录-正常登录 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">交易初始-正常初始化 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">交易创建-正常创建 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">交易otp-正常获取Otp (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">交易确认-正常交易确认 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 交易确认</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">CaseLogin001</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CaseLogin001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CaseTransactionApprove001</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CaseTransactionApprove001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CaseTransactionCreate001</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CaseTransactionCreate001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CaseTransactionInit001</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CaseTransactionInit001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CaseTransactionOtp001</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CaseTransactionOtp001</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 交易确认</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_交易确认');
+function tableData_交易确认() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'CaseLogin001')
+data.setCell(0, 2, 'com.suite.CaseLogin')
+data.setCell(0, 3, 30099);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CaseTransactionInit001')
+data.setCell(1, 2, 'com.suite.CaseTransactionInit')
+data.setCell(1, 3, 29);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CaseTransactionCreate001')
+data.setCell(2, 2, 'com.suite.CaseTransactionCreate')
+data.setCell(2, 3, 26);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CaseTransactionOtp001')
+data.setCell(3, 2, 'com.suite.CaseTransactionOtp')
+data.setCell(3, 3, 24);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CaseTransactionApprove001')
+data.setCell(4, 2, 'com.suite.CaseTransactionApprove')
+data.setCell(4, 3, 0);
+window.suiteTableData['交易确认']= { tableData: data, tableDiv: 'times-div-交易确认'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-交易确认">
+              </div> <!-- times-div-交易确认 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 交易确认</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">23 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.suite.CaseTransactionCreate</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">CaseTransactionCreate005</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate006</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate003</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate004</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate009</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate007</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate008</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionCreate002</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.suite.CaseTransactionInit</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">CaseTransactionInit009</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit008</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit007</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit006</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit012</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit011</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit010</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit005</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit015</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit004</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit014</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit003</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit013</span>
+                <br/>
+                <span class="ignored-method-name">CaseTransactionInit002</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.suite.CaseLogin</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">CaseLogin002</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-交易确认" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suite.CaseLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CaseLogin001(LoginData001, 13710872022, che001, 200, {"platform":"ANDROID","deviceId":"120c83f7602791d0bef","mobi...)</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">30426 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">30427 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suite.CaseTransactionInit</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">30449 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">30453 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CaseTransactionInit001(TransactionInitData001, 200, {"sourcePhone":"13710872022","targetPhone":"16800000017","amount":"2","...)</span>
+                <span class="method-start">30454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">30484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">30485 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suite.CaseTransactionCreate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">30489 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CaseTransactionCreate001(TransatcionCreateData001, 201, {"transactionId":null,"royalty_paramet":"AF_2&&CF_0","totalAmount":"2...)</span>
+                <span class="method-start">30494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">30494 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">30521 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">30522 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suite.CaseTransactionOtp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">30526 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">30530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CaseTransactionOtp001(TransactionOtpData001, 201, {"transaction":null})</span>
+                <span class="method-start">30531 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">30556 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">30556 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suite.CaseTransactionApprove</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">30562 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">30752 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

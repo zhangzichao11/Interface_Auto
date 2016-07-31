@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="交易创建" parallel="false">
+ <!-- get token -->
+	<test name="登录-正常登录" preserve-order="true">
+		<groups>
+			<run>				
+				<include name="CaseLogin001"/>				
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseLogin" />			
+		</classes>
+	</test>
+	<!-- get  TransactionId-->
+	<test name="交易初始-正常初始化" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionInit001"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionInit" />			
+		</classes>
+	</test>
+	  
+	<test name="交易创建-正常创建" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate001"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-交易id为空" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate002"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-付款账户信息为空" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate003"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-付款总额为空" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate004"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-错误的交易id" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate005"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-付款账户金额与初始化金额不一致" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate006"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-交易总额与初始化金额不一致" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate007"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-json参数为空" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate009"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+	
+	<!-- get  TransactionId-->
+	<test name="交易初始-正常初始化，但付款金额不足" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionInit015"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionInit" />			
+		</classes>
+	</test>
+	
+	<test name="交易创建-付款金额不足" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseTransactionCreate008"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseTransactionCreate" />			
+		</classes>
+	</test>
+</suite>

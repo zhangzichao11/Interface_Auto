@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbservers>
+		<dbserver name="ulti-accountsys-db" type="MYSQL" os="Linux_64" ip="10.10.1.130"
+		port="3306" username="platform" password="platform" dbName="findb" dbInstance="findb"/>		
+		
+		<dbserver name="stg-accountsys-db" type="MYSQL" os="Linux_64" ip="10.10.1.127"
+		port="3306" username="qauser" password="qauser0330" dbName="p2pAccount" dbInstance="p2pAccount"/>		
+		
+		<dbserver name="stgnew-accountsys-db" type="MYSQL" os="Linux_64" ip="10.10.0.114"
+		port="3306" username="platform" password="platform" dbName="p2pAccount" dbInstance="p2pAccount"/>		
+		
+	
+		
+		<dbserver name="dev-accountsys-db" type="MYSQL" os="Linux_64" ip="10.10.0.217"
+		port="3306" username="platform" password="platform2014" dbName="che001" dbInstance="che001"/>	
+		
+		
+		<dbserver name="ulti-qyd-db" type="MYSQL" os="Linux_64" ip="10.10.0.165"
+		port="3306" username="platform" password="platform" dbName="qydproduction" dbInstance="qydproduction"/>	
+		
+		
+		<dbserver name="stgnew-qyd-db" type="MYSQL" os="Linux_64" ip="10.10.0.114"
+		port="3306" username="platform" password="platform" dbName="qydproduction" dbInstance="qydproduction"/>	
+		
+		<!-- ultimate -->
+		<dbserver name="ultimate-dfb-db" type="MYSQL" os="Linux_64" ip="10.10.1.130"
+		port="3306" username="platform" password="platform" dbName="che001" dbInstance="che001"/>
+	
+</dbservers>		

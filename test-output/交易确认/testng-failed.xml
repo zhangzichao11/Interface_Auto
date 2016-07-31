@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [交易确认]">
+  <test name="登录-正常登录(failed)">
+    <groups>
+      <run>
+        <include name="CaseLogin001"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.suite.CaseTransactionCreate">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionCreate -->
+      <class name="com.suite.CaseTransactionApprove">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionApprove -->
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+      <class name="com.suite.CaseTransactionOtp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionOtp -->
+      <class name="com.suite.CaseLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="CaseLogin001" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseLogin -->
+    </classes>
+  </test> <!-- 登录-正常登录(failed) -->
+  <test name="交易初始-正常初始化(failed)">
+    <groups>
+      <run>
+        <include name="CaseTransactionInit001"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.suite.CaseTransactionCreate">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionCreate -->
+      <class name="com.suite.CaseTransactionApprove">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionApprove -->
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="CaseTransactionInit001" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+      <class name="com.suite.CaseTransactionOtp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionOtp -->
+      <class name="com.suite.CaseLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseLogin -->
+    </classes>
+  </test> <!-- 交易初始-正常初始化(failed) -->
+  <test name="交易创建-正常创建(failed)">
+    <groups>
+      <run>
+        <include name="CaseTransactionCreate001"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.suite.CaseTransactionCreate">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="CaseTransactionCreate001" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionCreate -->
+      <class name="com.suite.CaseTransactionApprove">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionApprove -->
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+      <class name="com.suite.CaseTransactionOtp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionOtp -->
+      <class name="com.suite.CaseLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseLogin -->
+    </classes>
+  </test> <!-- 交易创建-正常创建(failed) -->
+  <test name="交易otp-正常获取Otp(failed)">
+    <groups>
+      <run>
+        <include name="CaseTransactionOtp001"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.suite.CaseTransactionCreate">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionCreate -->
+      <class name="com.suite.CaseTransactionApprove">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionApprove -->
+      <class name="com.suite.CaseTransactionOtp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="CaseTransactionOtp001" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionOtp -->
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+      <class name="com.suite.CaseLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseLogin -->
+    </classes>
+  </test> <!-- 交易otp-正常获取Otp(failed) -->
+  <test name="交易确认-正常交易确认(failed)">
+    <groups>
+      <run>
+        <include name="CaseTransactionApprove001"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.suite.CaseTransactionCreate">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionCreate -->
+      <class name="com.suite.CaseTransactionApprove">
+        <methods>
+          <include name="afterClass"/>
+          <include name="CaseTransactionApprove001"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionApprove -->
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+      <class name="com.suite.CaseTransactionOtp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionOtp -->
+      <class name="com.suite.CaseLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.suite.CaseLogin -->
+    </classes>
+  </test> <!-- 交易确认-正常交易确认(failed) -->
+</suite> <!-- Failed suite [交易确认] -->

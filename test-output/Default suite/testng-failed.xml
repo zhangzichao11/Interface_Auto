@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.suite.CaseTransactionInit">
+        <methods>
+          <include name="CaseTransactionInit009" invocation-numbers="0"/>
+          <include name="CaseTransactionInit008" invocation-numbers="0"/>
+          <include name="CaseTransactionInit007" invocation-numbers="0"/>
+          <include name="CaseTransactionInit006" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="CaseTransactionInit001" invocation-numbers="0"/>
+          <include name="CaseTransactionInit012" invocation-numbers="0"/>
+          <include name="CaseTransactionInit011" invocation-numbers="0"/>
+          <include name="CaseTransactionInit010" invocation-numbers="0"/>
+          <include name="CaseTransactionInit005" invocation-numbers="0"/>
+          <include name="CaseTransactionInit004" invocation-numbers="0"/>
+          <include name="CaseTransactionInit003" invocation-numbers="0"/>
+          <include name="CaseTransactionInit014" invocation-numbers="0"/>
+          <include name="CaseTransactionInit002" invocation-numbers="0"/>
+          <include name="CaseTransactionInit013" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.suite.CaseTransactionInit -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

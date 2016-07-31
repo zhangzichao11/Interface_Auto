@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="登录" parallel="false">
+
+	<test name="登录-正常登录" preserve-order="true">
+		<groups>
+			<run>				
+				<include name="CaseLogin001"/>				
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseLogin" />			
+		</classes>
+	</test>
+	
+	<test name="登录-deviceId为空" preserve-order="true">
+		<groups>
+			<run>
+				<include name="CaseLogin002"/>
+			</run>
+		</groups>
+		<classes>						
+			<class name="com.suite.CaseLogin" />			
+		</classes>
+	</test>
+</suite> 
